@@ -14,6 +14,7 @@ package org.talend.mdm.repository.utils;
 
 import org.apache.log4j.Logger;
 import org.talend.core.GlobalServiceRegister;
+import org.talend.core.IService;
 
 /**
  * created by HHB on 2013-8-21 Detailled comment
@@ -23,7 +24,7 @@ public class ServiceUtil {
 
     static Logger log = Logger.getLogger(ServiceUtil.class);
 
-    public static <T> T getService(Class<T> t) {
+    public static <T extends IService> T getService(Class<T> t) {
         try {
             if (GlobalServiceRegister.getDefault().isServiceRegistered(t)) {
                 T service = (T) GlobalServiceRegister.getDefault().getService(t);
