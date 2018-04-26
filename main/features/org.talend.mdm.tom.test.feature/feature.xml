@@ -16,14 +16,6 @@
       Tests For Talend MDM in tom
    </license>
 
-   <requires>
-      <import plugin="org.talend.mdm.repository"/>
-      <import plugin="org.eclipse.xsd"/>
-      <import plugin="org.talend.mdm.workbench"/>
-      <import plugin="org.junit"/>
-      <import plugin="org.talend.designer.routines.mdmprovider"/>
-   </requires>
-
    <plugin
          id="org.talend.mdm.repository.test"
          download-size="0"
